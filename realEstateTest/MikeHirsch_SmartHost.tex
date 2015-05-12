@@ -129,7 +129,7 @@ I would recommend the following changes to data storage:
 
 	\end{itemize}
 
-If data were stored this way, we would need to compute the intermediary snapshots when doing out analysis. Since we would not be storing redundant information, we would need to create entries for the days in which the price remained fixed. We could simply take the range of dates between the two snapshots and set the price equal to the price before the change. Also, when generating datasets like the one included in the assignment, we would first need to refer to the compset objects, then get the appropriate snapshots from their locations.
+If data were stored this way, we would need to compute the intermediary snapshots when doing our analysis. Since we would not be storing redundant information, we would need to create entries for the days in which the price remained fixed. We could simply take the range of dates between the two snapshots and set the price equal to the price before the change. Also, when generating datasets like the one included in the assignment, we would first need to refer to the compset objects, then get the appropriate snapshots from their locations.
 
 For storing a large amount of listings, we could go with redis, a very flexible and popular NoSql database. There are many benefits to going with redis, most notably it's speed and versatility in storage. This could allow us to give near real time pricing information when adding or removing items from a compset.
 
