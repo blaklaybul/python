@@ -89,6 +89,7 @@ def random_text(hist, num = 5):
 	''' i need to figure out how to get all pairs that begin with end word
 	of previous pair
 	'''
+	print hist.head()
 	t=[]
 	t.append(' '.join(weighted_choice(hist)) + " ")
 	new_hist = hist[hist["word1"] == t[-1].split()[-1]] #get the end!
@@ -114,5 +115,3 @@ if __name__ == '__main__':
 	print "The Most Common Pairs are: \n", most_common(hist[1])
 
 	print ''.join(random_text(hist[1],4))
-	# print ''.join(random_text(hist[1],4))
-	# print ''.join(random_text(hist[1],4))
